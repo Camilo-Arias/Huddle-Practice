@@ -1,0 +1,254 @@
+/* globals */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --VeryDark: hsl(192, 100%, 9%);
+  --VeryWhite: hsl(207, 100%, 98%);
+  --Pink: hsl(322, 100%, 66%);
+  --Gray: #77818a;
+}
+/* header */
+.wrapper.header {
+  padding-top: 30px;
+}
+.wrapper {
+  padding: 0 30px;
+}
+
+.grid {
+  display: grid;
+  grid-row-gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-Content {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.HeaderImg {
+  height: 20px;
+}
+
+.ButtonHeader:hover {
+  border: 2px solid purple;
+  background: var(--Pink);
+  color: var(--VeryWhite);
+}
+.ButtonHeader {
+  border: 2px solid var(--Pink);
+  border-radius: 20px;
+  width: 100px;
+  background: var(--VeryPaleBlue);
+  color: var(--Pink);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  text-align: center;
+  line-height: 1.9em;
+}
+
+/* section */
+.grid-section {
+  padding-top: 80px;
+  text-align: center;
+}
+
+/* first tittle */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--VeryDark);
+  font-size: 1.7em;
+}
+
+.PCard {
+  color: #1e3c47;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding-bottom: 40px;
+}
+
+.ButtonCard {
+  border: none;
+  border-radius: 40px;
+  width: 230px;
+  height: 50px;
+  background: var(--Pink);
+  color: var(--VeryWhite);
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  text-align: center;
+  line-height: 2.2em;
+}
+
+.ImgCommunity {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+/* first card responsive */
+.Card {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.DImg {
+  text-align: left;
+  padding-left: 4em;
+}
+
+.Numbers {
+  margin: 0;
+}
+
+.Card-Followers {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.Card-Followers.two {
+  font-size: 63px;
+}
+.Card-Messages {
+  display: block;
+  color: var(--Gray);
+  font-size: 18px;
+  font-weight: 600;
+}
+/* images */
+.View {
+  width: 100%;
+  padding-top: 8em;
+}
+
+/* text of cards responsives */
+.Card.text {
+  padding-bottom: 130px;
+  padding-top: 5em;
+}
+
+.TCard {
+  font-family: "Poppins", sans-serif;
+  color: var(--VeryDark);
+  font-size: 1.9em;
+  font-weight: 700;
+}
+
+.DescriptionCard {
+  display: block;
+  color: #364f57;
+  font-size: 1.2em;
+  padding-top: 0.9em;
+}
+
+.grid-section.Afooter {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.TittleCommunity.Afooter {
+  padding-bottom: 1em;
+}
+
+/* footer page */
+
+.Footer-Cards {
+  background: var(--VeryDark);
+  color: var(--VeryWhite);
+  background: var(--VeryDark);
+}
+
+.footer {
+  padding-bottom: 6em;
+}
+
+.Tittle-footer {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.Text-footer {
+  font-size: 1.04em;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+.Correo-footer {
+  border-radius: 6px;
+  width: 23em;
+  height: 3em;
+  margin-bottom: 15px;
+}
+
+.Subcribe {
+  text-align: right;
+}
+
+.ButtonCard.Subscribe {
+  width: 150px;
+  height: 45px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.Text-footer {
+  padding-bottom: 2em;
+}
+
+.card-title {
+  padding-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.card-title img {
+  margin-right: 1.5em;
+}
+
+.Img-Redes {
+  margin: 0.4em;
+  padding-top: 0.4em;
+  padding-bottom: 2.7em;
+}
+
+@media screen and (min-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-column-start: 2;
+    align-items: center;
+    justify-content: center;
+  }
+}
