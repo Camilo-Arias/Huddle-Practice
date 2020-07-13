@@ -19,9 +19,7 @@ body {
 
 .grid {
   display: grid;
-  grid-row-gap: 25px;
   align-items: center;
-  justify-content: center;
 }
 
 .header-Content {
@@ -42,7 +40,7 @@ body {
 .ButtonHeader {
   border: 2px solid var(--Pink);
   border-radius: 20px;
-  width: 100px;
+  padding: 0 1.5em;
   background: var(--VeryPaleBlue);
   color: var(--Pink);
   font-weight: 600;
@@ -77,17 +75,15 @@ h1 {
 .ButtonCard {
   border: none;
   border-radius: 40px;
-  width: 230px;
-  height: 50px;
+  padding: 1em 3.5em;
   background: var(--Pink);
   color: var(--VeryWhite);
-  font-size: 1.1em;
-  font-weight: 700;
+  font-weight: 600;
   cursor: pointer;
   user-select: none;
   outline: none;
-  text-align: center;
-  line-height: 2.2em;
+  text-align: center; /* 
+  line-height: 2.2em; */
 }
 
 .ImgCommunity {
@@ -108,7 +104,12 @@ h1 {
 }
 
 .Numbers {
-  margin: 0;
+  margin: 0; /* 
+  padding-top: 2em; */
+}
+
+.Card.Numbers {
+  padding: 4.5em 0 3em 0;
 }
 
 .Card-Followers {
@@ -117,7 +118,7 @@ h1 {
 }
 
 .Card-Followers.two {
-  font-size: 63px;
+  font-size: 70px;
 }
 .Card-Messages {
   display: block;
@@ -129,25 +130,29 @@ h1 {
 .View {
   width: 100%;
   padding-top: 8em;
+  padding-bottom: 3em;
 }
 
 /* text of cards responsives */
+
 .Card.text {
+  margin: 0;
+  /* 
   padding-bottom: 130px;
-  padding-top: 5em;
+  padding-top: 5em; */
 }
 
 .TCard {
   font-family: "Poppins", sans-serif;
   color: var(--VeryDark);
-  font-size: 1.9em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 .DescriptionCard {
   display: block;
   color: #364f57;
-  font-size: 1.2em;
+  font-size: 1em;
   padding-top: 0.9em;
 }
 
@@ -174,12 +179,12 @@ h1 {
 
 .Tittle-footer {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 700;
 }
 
 .Text-footer {
-  font-size: 1.04em;
+  font-size: 0.9em;
   font-weight: 400;
   line-height: 1.8em;
 }
@@ -196,8 +201,7 @@ h1 {
 }
 
 .ButtonCard.Subscribe {
-  width: 150px;
-  height: 45px;
+  padding: 0.9em 2.5em;
   border-radius: 6px;
   font-weight: bold;
   font-size: 1em;
@@ -228,9 +232,19 @@ h1 {
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
+    grid-row-gap: 3em;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
+  /* images */
+  .View {
+    padding-top: 0;
+  }
 
-    align-items: center;
-    justify-content: center;
+  .ImgCommunity {
+    padding-bottom: 0;
   }
 }
 
@@ -238,8 +252,6 @@ h1 {
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -247,8 +259,13 @@ h1 {
   .grid {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
-    grid-column-start: 2;
-    align-items: center;
-    justify-content: center;
+  }
+  .Card {
+    width: 40em;
+  }
+
+  .Subcribe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
