@@ -253,6 +253,9 @@ h1 {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 25px;
   }
+  .View {
+    padding-top: 0;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -262,6 +265,9 @@ h1 {
   }
   .Card {
     width: 40em;
+  }
+  .View {
+    padding-top: 0;
   }
 
   .Subcribe {
